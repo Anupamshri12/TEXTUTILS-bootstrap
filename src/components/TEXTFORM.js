@@ -1,6 +1,6 @@
 import React , {useState} from 'react'
 
-
+import './Respnonsive.css'
 export default function TEXTFORM(props) {
   
   const clickmeon = ()=>{
@@ -57,12 +57,12 @@ export default function TEXTFORM(props) {
   <textarea className = "form-control" value = {text} style = {{backgroundColor: props.mode === 'dark' ?'#817d7d' : 'white',
 color: props.mode=== 'dark'?'white':'black'}} onChange = {handleonclick}  id = "mybox" rows = "8"></textarea>
 </div>
- <button className="btn btn-primary" onClick = {clickmeon}>Convert to Uppercase</button>
- <button className="btn btn-primary mx-2" onClick = {clickmeon1}>Convert to Lowercase</button>
- <button className="btn btn-primary mx-2" onClick = {cleartext}>Clear Text</button>
- <button className="btn btn-primary mx-2" onClick = {repeattext}>Repeat Text</button>
- <button className="btn btn-primary mx-2" onClick = {wordcopy}>Copy Text</button>
- <button className="btn btn-primary mx-2" onClick = {removespace}>Trim Text</button>
+ <button className="btn btn-primary " onClick = {clickmeon}>Convert to Uppercase</button>
+ <button className="btn btn-primary mx-2 my-2" onClick = {clickmeon1}>Convert to Lowercase</button>
+ <button className="btn btn-primary mx-2 my-2" onClick = {cleartext}>Clear Text</button>
+ <button className="btn btn-primary mx-2 my-2" onClick = {repeattext}>Repeat Text</button>
+ <button className="btn btn-primary mx-2 my-2" onClick = {wordcopy}>Copy Text</button>
+ <button className="btn btn-primary mx-2 my-2" onClick = {removespace}>Trim Text</button>
 </div>
 <div className="container my-3" style = {{color: props.mode=== 'dark'?'white':'black'}}>
 <h3>Your text Summary</h3>

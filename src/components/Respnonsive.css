@@ -1,0 +1,5 @@
+@media screen and (max-width : 425px){
+    .btn-primary{
+        font-size: .9rem;
+    }
+}
